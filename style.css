@@ -1,188 +1,37 @@
-/* CoTeSy IT Services Group Website */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    font-family: Arial, sans-serif;
-    background:#f5f8ff;
-    color:#07164a;
-    line-height:1.6;
-}
-
-/* Header */
-
-header{
-    background:linear-gradient(135deg,#ffffff,#dce9ff);
-    text-align:center;
-    padding:50px 20px;
-}
-
-.logo{
-    width:140px;
-    border-radius:50%;
-    margin-bottom:15px;
-}
-
-h1{
-    color:#003cc8;
-    font-size:60px;
-    margin-bottom:10px;
-}
-
-.subtitle{
-    font-size:22px;
-    color:#07164a;
-    margin-bottom:20px;
-}
-
-.btn{
-    display:inline-block;
-    background:#003cc8;
-    color:white;
-    padding:15px 30px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.btn:hover{
-    background:#002a8f;
-}
-
-/* Sections */
-
-section{
-    padding:60px 8%;
-}
-
-.section-title{
-    text-align:center;
-    color:#003cc8;
-    font-size:40px;
-    margin-bottom:40px;
-}
-
-/* Features */
-
-.features{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
-}
-
-.feature-box{
-    background:white;
-    padding:25px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-.feature-box h3{
-    color:#003cc8;
-    margin-bottom:10px;
-}
-
-/* Courses Table */
-
-.table-container{
-    overflow-x:auto;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-th{
-    background:#003cc8;
-    color:white;
-    padding:15px;
-    font-size:18px;
-}
-
-td{
-    padding:15px;
-    border-bottom:1px solid #e0e0e0;
-    text-align:center;
-}
-
-td:first-child{
-    text-align:left;
-    font-weight:bold;
-}
-
-.price{
-    color:#003cc8;
-    font-size:20px;
-    font-weight:bold;
-}
-
-/* Contact Section */
-
-.contact{
-    background:#003cc8;
-    color:white;
-    text-align:center;
-}
-
-.contact h2{
-    color:white;
-}
-
-.contact-card{
-    max-width:800px;
-    margin:auto;
-}
-
-.contact a{
-    color:#ffd700;
-    text-decoration:none;
-    font-size:28px;
-    font-weight:bold;
-}
-
-.contact a:hover{
-    text-decoration:underline;
-}
-
-/* Footer */
-
-footer{
-    background:#06133d;
-    color:white;
-    text-align:center;
-    padding:20px;
-}
-
-/* Responsive */
-
-@media(max-width:768px){
-
-    h1{
-        font-size:40px;
-    }
-
-    .section-title{
-        font-size:30px;
-    }
-
-    th,
-    td{
-        font-size:14px;
-        padding:10px;
-    }
-
-    .contact a{
-        font-size:22px;
-    }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f8ff;color:#07164a;line-height:1.6}
+nav{background:#003cc8;color:white;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.brand{font-size:24px;font-weight:900}
+.links a{color:white;text-decoration:none;margin-left:20px;font-weight:bold}
+.menu-btn{display:none;background:white;color:#003cc8;border:0;padding:8px 12px;border-radius:8px;font-size:22px}
+.hero{min-height:85vh;padding:60px 7%;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center;background:linear-gradient(135deg,#fff,#dce9ff)}
+.tag{color:#003cc8;font-weight:900;text-transform:uppercase;letter-spacing:2px}
+h1{font-size:clamp(38px,6vw,72px);line-height:1.05;color:#003cc8;margin-bottom:18px}
+.hero p,.page p{font-size:20px;margin-bottom:16px}
+.btn,button,.whatsapp{display:inline-block;background:#003cc8;color:white;padding:14px 24px;border-radius:30px;text-decoration:none;font-weight:900;border:0;margin:8px 8px 8px 0;cursor:pointer}
+.outline{background:white;color:#003cc8;border:2px solid #003cc8}
+.hero-img{width:100%;border-radius:25px;box-shadow:0 20px 40px #0002}
+.cards{padding:50px 7%;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cards div,.contact-box,form{background:white;padding:28px;border-radius:20px;box-shadow:0 10px 25px #0001}
+.cards h3{color:#003cc8;font-size:25px}
+.page{padding:60px 7%;min-height:75vh}
+.table-wrap{overflow-x:auto;background:white;border-radius:20px;box-shadow:0 10px 25px #0001}
+table{width:100%;border-collapse:collapse;min-width:760px}
+th{background:#003cc8;color:white;padding:15px}
+td{padding:14px;border-bottom:1px solid #dce6ff;text-align:center}
+td:first-child{text-align:left;font-weight:bold}
+td:nth-child(3){color:#003cc8;font-size:20px;font-weight:bold}
+form{max-width:650px;margin:auto;display:grid;gap:15px}
+input,select,textarea{padding:14px;border:1px solid #c7d6ff;border-radius:10px;font-size:16px}
+textarea{height:130px}
+.float-whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;z-index:20}
+footer{background:#06133d;color:white;text-align:center;padding:20px}
+section{opacity:0;transform:translateY(25px);transition:.8s}
+section.show{opacity:1;transform:translateY(0)}
+@media(max-width:850px){
+  .hero,.cards{grid-template-columns:1fr}
+  .menu-btn{display:block}
+  .links{display:none;position:absolute;top:65px;left:0;right:0;background:#003cc8;padding:15px}
+  .links a{display:block;margin:14px 7%}
+  .links.active{display:block}
 }
