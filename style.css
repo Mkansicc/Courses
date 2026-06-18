@@ -1,0 +1,188 @@
+/* CoTeSy IT Services Group Website */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f5f8ff;
+    color:#07164a;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:linear-gradient(135deg,#ffffff,#dce9ff);
+    text-align:center;
+    padding:50px 20px;
+}
+
+.logo{
+    width:140px;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+h1{
+    color:#003cc8;
+    font-size:60px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:22px;
+    color:#07164a;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:#003cc8;
+    color:white;
+    padding:15px 30px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#002a8f;
+}
+
+/* Sections */
+
+section{
+    padding:60px 8%;
+}
+
+.section-title{
+    text-align:center;
+    color:#003cc8;
+    font-size:40px;
+    margin-bottom:40px;
+}
+
+/* Features */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.feature-box{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature-box h3{
+    color:#003cc8;
+    margin-bottom:10px;
+}
+
+/* Courses Table */
+
+.table-container{
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+th{
+    background:#003cc8;
+    color:white;
+    padding:15px;
+    font-size:18px;
+}
+
+td{
+    padding:15px;
+    border-bottom:1px solid #e0e0e0;
+    text-align:center;
+}
+
+td:first-child{
+    text-align:left;
+    font-weight:bold;
+}
+
+.price{
+    color:#003cc8;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* Contact Section */
+
+.contact{
+    background:#003cc8;
+    color:white;
+    text-align:center;
+}
+
+.contact h2{
+    color:white;
+}
+
+.contact-card{
+    max-width:800px;
+    margin:auto;
+}
+
+.contact a{
+    color:#ffd700;
+    text-decoration:none;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.contact a:hover{
+    text-decoration:underline;
+}
+
+/* Footer */
+
+footer{
+    background:#06133d;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    h1{
+        font-size:40px;
+    }
+
+    .section-title{
+        font-size:30px;
+    }
+
+    th,
+    td{
+        font-size:14px;
+        padding:10px;
+    }
+
+    .contact a{
+        font-size:22px;
+    }
+}
